@@ -5,6 +5,7 @@
 ## How to run
 
 - Clone the repository
-- Run `npm install`
-- Run `npm start`
-- Run the index.html using live server extension in VSCode.
+- Run `npm install` to install the dependencies
+- Run `npm start` to start the server
+- Run the `index.html` using live server extension in VSCode
+- You can use the frontend to generate the question paper
