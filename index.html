@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="server.js">
+    <link rel="question" href="questions.json">
+    <title>Question Paper Generator</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Question Paper Generator</h1>
+        <form id="questionForm">
+            <!-- Add form fields for question, subject, topic, difficulty, and marks -->
+            <label for="question">Question:</label>
+            <textarea id="question" name="question" required></textarea>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="topic">Topic:</label>
+            <input type="text" id="topic" name="topic" required>
+
+            <label for="difficulty">Difficulty:</label>
+            <select id="difficulty" name="difficulty" required>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+
+            <label for="marks">Marks:</label>
+            <input type="number" id="marks" name="marks" required>
+
+            <button type="button" onclick="addQuestion()">Add Question</button>
+        </form>
+
+        <div id="questionList">
+            <!-- Display the list of added questions here -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
